@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+
+  db:
+    container_name: pg_container
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASS}
+      POSTGRES_DB: ${DB_BASE}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data/
+      - ./dump_db.sql:/docker-entrypoint-initdb.d/init.sql
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER_KEYCLOAK}
+      POSTGRES_PASSWORD: ${DB_PASS_KEYCLOAK}
+      POSTGRES_DB: ${DB_BASE_KEYCLOAK}
+    volumes:
+      - pg_data_keycloack_db:/var/lib/postgresql/data/
+      - ./dump_keycloak.sql:/docker-entrypoint-initdb.d/init.sql
+
+  app_keycloak:
+    depends_on:
+      - postgres
+    container_name: keycloak
+    image: quay.io/keycloak/keycloak:latest
+    restart: always
+    environment:
+      DB_VENDOR: POSTGRES
+      DB_ADDR: postgres
+      DB_DATABASE: ${DB_BASE_KEYCLOAK}
+      DB_SCHEMA: public
+      DB_USER: ${DB_USER_KEYCLOAK}
+      DB_PASSWORD: ${DB_PASS_KEYCLOAK}
+      KEYCLOAK_USER: ${KEYCLOAK_USER}
+      KEYCLOAK_PASSWORD: ${KEYCLOAK_PASSWORD}
+    ports:
+      - "8443:8443"
+      - "8080:8080"
+
+volumes:
+  pg_data:
+  pg_data_keycloack_db:
