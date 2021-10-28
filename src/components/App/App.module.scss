@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: Roboto, sans-serif;
+  font-size: 10px;
+  color: #4d4d4d;
+}
+
+:global(.fns-card) {
+  box-shadow: 0 1px 4px rgba(26, 26, 26, 0.08);
+  border-radius: 8px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.component {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  .section {
+    height: 100%;
+  }
+}

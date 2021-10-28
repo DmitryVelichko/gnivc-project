@@ -1,0 +1,9 @@
+.component {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+
+  &:empty {
+    display: none;
+  }
+}

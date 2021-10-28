@@ -1,0 +1,2 @@
+// 'canceled' -> 'danger'
+export {};

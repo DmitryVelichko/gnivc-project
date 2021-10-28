@@ -1,0 +1,140 @@
+@import "../../styles/variables.scss";
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  color: #000;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  text-decoration: none;
+  transition: 0.1s ease all;
+  min-width: 300px;
+  width: 100%;
+
+  &Created {
+    display: block;
+
+    .info {
+      flex-direction: row;
+    }
+
+    .progress {
+      max-width: 100px;
+    }
+  }
+
+  header {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    h1 {
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+
+
+  .params {
+    display: flex;
+    font-size: 14px;
+    margin-bottom: 10px;
+    gap: 10px;
+    color: #94979e;
+
+    &Block {
+      display: flex;
+      gap: 5px;
+    }
+
+    &Icon {
+      font-size: 16px;
+      color: #224b8d;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 120px;
+
+    &Block {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    &Icon {
+      font-size: 20px;
+      color: #224b8d;
+    }
+  }
+
+
+  footer {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .tag {
+    font-size: 12px;
+    padding: 2px 6px;
+  }
+
+  .progress {
+    display: flex;
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    // -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    // box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    // padding: 2px;
+    height: 8px;
+
+    &Bar {
+      height: 100%;
+      border-radius: 4px;
+      font-size: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+      background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+      background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+      background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05));
+    }
+  }
+
+  .weight {
+    &25 {
+      background-color: $taskEasy;
+    }
+
+    &50 {
+      background-color: $taskMedium;
+
+    }
+
+    &75 {
+      background-color: $taskHard;
+
+    }
+
+    &100 {
+      background-color: $taskVeryHard;
+    }
+  }
+
+  &:hover {
+    .header {h1 {
+      text-decoration: underline;
+    }}
+
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+}

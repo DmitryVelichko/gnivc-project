@@ -1,0 +1,153 @@
+@import "../../../styles/variables.scss";
+.component {
+  min-height: 700px;
+  font-size: 14px;
+  line-height: 1.5;
+  a {
+    color: $blue;
+    transition: 0.1s ease all;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.owner {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 30px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.duration {
+}
+
+.dueDate {
+}
+
+.weight {
+}
+
+.link {
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-bottom: 10px;
+}
+
+.attachments {
+  margin-bottom: 20px;
+
+  a {
+    display: block;
+  }
+}
+
+.selectedApplicant {
+  font-weight: 700;
+  margin-bottom: 20px;
+
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+.applicants {
+  margin-bottom: 30px;
+  font-size: 14px;
+
+  div,
+  div:first-child {
+    color: inherit;
+    padding: 0;
+  }
+}
+.applicant {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 320px;
+  gap: 16px;
+  a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: inherit;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 6px;
+    transition: 0.1s ease all;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
+
+.modal {
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    min-width: 120px;
+  }
+}
+
+// .button {
+//   position: sticky;
+//   bottom: 20px;
+//   left: 0;
+//   z-index: 1;
+//   margin-bottom: 20px;
+// }

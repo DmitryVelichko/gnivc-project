@@ -1,0 +1,23 @@
+@import "../../../styles/variables.scss";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 25px;
+  gap: 15px;
+
+  .title {
+    flex-shrink: 0;
+    margin-bottom: 20px;
+  }
+}
+
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+}

@@ -1,0 +1,41 @@
+@import "../../../styles/variables.scss";
+
+.component {
+  font-size: 14px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.tabs {
+  margin-bottom: 20px;
+}
+
+.count {
+  margin-bottom: 10px;
+}
+
+.tasks {
+  min-height: 500px;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+
+  a {
+    color: $blue;
+  }
+
+  button {
+    color: $blue;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}

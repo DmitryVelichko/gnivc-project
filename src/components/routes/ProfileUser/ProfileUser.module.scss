@@ -1,0 +1,54 @@
+.container {
+   width: 100%;
+   height:100%;
+   padding-left: 20px;
+}
+
+.userName{
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.item {
+   padding-top: 15px;
+   color: #4e74d7;
+   width:400px ;
+}
+
+.select{
+   width: 400px;
+   font-size: 14px;
+}
+
+.selectDisabled{
+   span{
+      color: #4e74d7;
+   }
+  
+}
+
+.listName {
+   color: #4e74d7;
+   font-size: 14px;
+}
+
+.list {
+   padding: 6px 32px 6px 12px;
+   min-height: 30px;
+   font-size: 14px;
+   border: 1px solid #C9CBCF;
+   border-radius: 4px;
+   display: flex;
+   flex-wrap: wrap;
+   grid-gap: 8px;
+}
+
+.listTag{
+   color:green;
+}
+
+.button{
+   padding: 5px 5px 5px;
+   font-size: 14px;
+   color: #4e74d7;
+}
