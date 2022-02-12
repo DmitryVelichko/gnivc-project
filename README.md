@@ -1,6 +1,6 @@
 # Team project (Task Manager for Company Employees) 
 
-This project was built during the internship at Main Scientific Innovation and Implementation Center (https://gnivc.ru/).
+This project was built during the internship at Main Scientific Innovation and Implementation Center.
 
 Technologies used: ReactJS, TypeScript, SCSS, MobX, GraphQL, Node, PostgreSQL, KeyCloak, JSON Web Token, Docker.
 
@@ -39,7 +39,7 @@ Database:
 
 Предыстория задачи
 
-В ГНИВЦ ведётся много проектов, организация работы достаточно сложна и в последнее время проходит через ряд улучшений.
+В компании ведётся много проектов, организация работы достаточно сложна и в последнее время проходит через ряд улучшений.
 
 Одна из перспективных тем в этом направлении - внутренняя биржа задач. Такая биржа позволила бы каждому сотруднику самостоятельно отмечать, над какими задачами он хотел бы работать, какие профессиональные навыки развивать, более точно планировать своё материальное вознаграждение. Основная задача биржи -
 позволить напрямую встретиться владельцу (автору) задачи и исполнителю,
